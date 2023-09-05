@@ -1,0 +1,16 @@
+{% extends 'shop/base.html' %}
+ 
+{% block content %}
+<h1>{{title}}</h1>
+
+<ul>
+    {% for p in cats %}
+    <li>
+        <h2>{{p.name}}</h2>
+        {{p.name_album}}</p>
+        <hr>
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
